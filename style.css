@@ -182,14 +182,48 @@ h1 {
 }
 
 .scale {
-    width: 100%;
+	width: 100%;
 }
 
 .slider .scale ul {
 	list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    font-weight: bold;
-    color: rgb(166, 166, 166);
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	font-weight: bold;
+	color: rgb(166, 166, 166);
+}
+
+.card-wrapper {
+	display: flex;
+}
+
+.card {
+	background-color: rgb(250, 247, 255);
+	border-radius: 10px;
+	margin: 16px;
+	padding: 16px 32px;
+	text-align: center;
+	box-shadow: 0 3px 11px 1px rgba(0, 0, 0, 0.1);
+	font-weight: bold;
+	color: rgb(83, 49, 156);
+text-transform: uppercase;
+}
+
+.card .top-section {
+  padding: 8px;
+}
+
+.card .top-section P {
+    margin: 4px 0;
+}
+.card .price {
+    font-size: 42px;
+    color: rgb(44, 44, 44);
+}
+
+.card hr {
+    width: 30%;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 2px;
 }
