@@ -19,6 +19,7 @@ h1 {
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 900px;
+	min-width: 375px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -110,6 +111,7 @@ h1 {
 
 .sessions-card {
 	width: 50%;
+	box-sizing: border-box;
 	margin: 16px 0;
 	background-color: rgb(250, 247, 255);
 	text-align: center;
@@ -267,4 +269,35 @@ h1 {
 	left: 0;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+	.card {
+		width: 100%;
+	}
+	.card-wrapper {
+		flex-wrap: wrap-reverse;
+	}
+	.sessions-card {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 16px;
+	}
+	h1 {
+		margin: 0 0 16px 0;
+	}
+	.container {
+		padding: 0 16px;
+	}
+	.sessions-card {
+		width: 100%;
+	}
+	.toggle-wrapper {
+		width: 90%;
+		justify-content: center;
+	}
 }
